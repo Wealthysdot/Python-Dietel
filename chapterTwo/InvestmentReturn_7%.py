@@ -15,13 +15,26 @@
 
 # r = 0.84
 
-def calculate_r(n1: float, n2: float, n3: float) -> float:
-    """A function that calculates the 7% annual rate of return)"""
-    r = ((7 * 12) / 100)
-    return r
-    print(calculate_r(n1, n2, n3))
+def calculate_investment_return(p: float, r: float, n: float):
+    """
+    p - principal
+    r - rate[0 -> 1]
+    n - num of years
+    returns the investment according ti the expression [p*(1 + r)**n]
+    """
+
+    return p * (1 + r) ** n
 
 
-# a = (p * (1 + calculate_p()) ** n
+def main():
+    p_given = 1000
+    r_given = 7 / 100
+    years_given = [10, 20, 30]
 
-# print(a)
+    for year in years_given:
+        inv_returns = calculate_investment_return(p_given, r_given, year)
+        print(f"year = {year}, return = {inv_returns:.2f}")
+
+    if __name__ == "__main__":
+        main()
+

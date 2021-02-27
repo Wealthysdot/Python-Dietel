@@ -5,12 +5,16 @@
 
 digit = 45678
 print(digit)
-# int(input("Enter five Digits:"))
-firstDigit = digit // 10000
-print(firstDigit)
 
-secondMod = digit %10000
-print(secondMod)
+
+# int(input("Enter five Digits:"))
+def separating_first_digit(num: int) -> int:
+    first_digit = num // 10000
+    print(first_digit)
+
+def separating_second_digit(num: int) -> int:
+    secondMod = digit % 10000
+    print(secondMod)
 
 secondDigit = secondMod // 1000
 print(secondDigit)
