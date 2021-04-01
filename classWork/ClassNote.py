@@ -2,7 +2,6 @@
 # #1. list =list()
 # #2. names = []
 # names = ['john', 'carol', 'kenny']
-# print(names)
 #
 # # names.append("Odun")
 # # print(names)
@@ -173,7 +172,6 @@
 #
 
 
-
 # for shakiti, bobo in enumerate(num):
 #     print(shakiti, bobo)
 
@@ -286,4 +284,5 @@
 # Fibonacci
 # a sequence that is created by the sum of thr last two value
 
-# bottle, book, pen, mouse, pendant  
+# bottle, book, pen, mouse, pendant
+
